@@ -33,7 +33,7 @@ public class JsonPlaceHolderClient {
 
 
     public UpdatePostResponse updatePost(Long postId, UpdatePostCommand updatePostCommand){
-        String requestUrl = baseUrl + "/posts/{id}";
+        String requestUrl = baseUrl + "posts/{id}";
 
         HttpHeaders headers = new HttpHeaders();
         headers.add("Accept", "application/json");
@@ -51,7 +51,7 @@ public class JsonPlaceHolderClient {
 
 
     public CreatePostResponse createPost(CreatePostCommand createPostCommand) {
-        String requestUrl = baseUrl + "/posts";
+        String requestUrl = baseUrl + "posts";
 
         HttpHeaders headers = new HttpHeaders();
         headers.add("Accept", "application/json");
@@ -68,7 +68,7 @@ public class JsonPlaceHolderClient {
     }
 
     public List<CommentResponse> comments() {
-        String requestUrl = baseUrl + "/comments";
+        String requestUrl = baseUrl + "comments";
 
         HttpHeaders headers = new HttpHeaders();
         headers.add("Accept", "application/json");
@@ -87,7 +87,7 @@ public class JsonPlaceHolderClient {
     public List<TodoResponse> todos() {
 
 
-        String requestUrl = baseUrl + "/todos";
+        String requestUrl = baseUrl + "todos";
 
         HttpHeaders headers = new HttpHeaders();
         headers.add("Accept", "application/json");
@@ -107,7 +107,7 @@ public class JsonPlaceHolderClient {
     }
 
     public List<PostResponse> posts() {
-        String requestUrl = baseUrl + "/todos";
+        String requestUrl = baseUrl + "todos";
 
         HttpHeaders headers = new HttpHeaders();
         headers.add("Accept", "application/json");
@@ -126,7 +126,7 @@ public class JsonPlaceHolderClient {
     }
 
     public List<CommentResponse> commentsOfPost(Long postId) {
-        String requestUrl = baseUrl + "/posts/{id}/comments";
+        String requestUrl = baseUrl + "posts/{id}/comments";
 
         HttpHeaders headers = new HttpHeaders();
         headers.add("Accept", "application/json");
